@@ -1,0 +1,16 @@
+# Write a shell script to Find a word in a specified location(Path) Using Grep.
+
+#!/bin/bash
+grep -w  Rushi /home/ubuntu/second.sh > new.txt   
+
+if [ -s new.txt ]
+then
+        echo " exit"
+else
+        echo "not exit"
+fi
+
+
+Note:
+
+# -w= word only
