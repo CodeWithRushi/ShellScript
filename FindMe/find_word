@@ -5,9 +5,9 @@ grep -w  Rushi /home/ubuntu/second.sh > new.txt
 
 if [ -s new.txt ]
 then
-        echo " exit"
+        echo " Content exit"
 else
-        echo "not exit"
+        echo "Content not exit"
 fi
 
 
