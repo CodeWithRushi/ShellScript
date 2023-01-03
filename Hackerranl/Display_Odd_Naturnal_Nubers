@@ -1,6 +1,0 @@
-display only odd natural numbers from  to 1 to 99
-#!/bin/bash
-for (( i=1;i<=99;i=i+2 ))
-do 
-    echo "$i"
-done
