@@ -1,0 +1,23 @@
+#Write a shell script to take a input from user store it to array and print the array
+
+echo "How many elements you want to insert in aray"
+read total
+echo "*******************************************"
+echo "Please Enter Elements"
+abc=()
+for (( j=0;j<$total;j++ ))
+do
+        read numb
+        abc+=($numb)
+done
+echo "*******************************************"
+echo -e "Total elements are $total"
+len=${#abc[@]}
+#echo ${abc[@]}
+#echo -e "len $len"
+echo "*******************************************"
+echo "The Entered Elements are "
+for (( j=0;j<$len;j++ ))                                                                                                                                               do
+  echo ${abc[$j]}
+done
+echo "*******************************************"
