@@ -1,0 +1,12 @@
+#!/bin/bash
+src=/home/ubuntu/.
+timestamp=$(date "+%y-%m-%d-%h-%m")
+if [ -f backup ]
+then
+        cd backup/$timestamp
+        tar -cvzf /home/ubuntu/backup/$timestamp.tar.gz $src
+else
+        mkdir /home/ubuntu/backup
+        cd /home/ubuntu/backup/$timestamp
+        tar -cvzf /home/ubuntu/backup/$timestamp.tar.gz $src
+fi
